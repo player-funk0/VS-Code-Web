@@ -1,0 +1,93 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --editor-bg: #1e1e1e;
+    --sidebar-bg: #252526;
+    --activity-bar-bg: #333333;
+    --title-bar-bg: #3c3c3c;
+    --status-bar-bg: #007acc;
+    --foreground: #cccccc;
+    --secondary-text: #858585;
+    --active-selection: #04395e;
+    --border: #454545;
+    --accent-blue: #007acc;
+    --accent-light: #0097fb;
+    --error-red: #f48771;
+    --warning-yellow: #cca700;
+    --success-green: #89d185;
+    --terminal-bg: #1e1e1e;
+    --terminal-fg: #cccccc;
+    --line-number: #858585;
+    --active-line: #2a2d2e;
+    
+    --background: 0 0% 100%;
+    --foreground: 0 0% 3.9%;
+    --card: 0 0% 100%;
+    --card-foreground: 0 0% 3.9%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 0% 3.9%;
+    --primary: 0 0% 9%;
+    --primary-foreground: 0 0% 98%;
+    --secondary: 0 0% 96.1%;
+    --secondary-foreground: 0 0% 9%;
+    --muted: 0 0% 96.1%;
+    --muted-foreground: 0 0% 45.1%;
+    --accent: 0 0% 96.1%;
+    --accent-foreground: 0 0% 9%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 0 0% 89.8%;
+    --input: 0 0% 89.8%;
+    --ring: 0 0% 3.9%;
+    --radius: 0.5rem;
+  }
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    background: var(--editor-bg);
+    color: var(--foreground);
+    overflow: hidden;
+    height: 100vh;
+    width: 100vw;
+    font-size: 13px;
+  }
+
+  #root {
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+  }
+}
+
+@layer components {
+  .vscode-scrollbar::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+  }
+
+  .vscode-scrollbar::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  .vscode-scrollbar::-webkit-scrollbar-thumb {
+    background: #424242;
+    border-radius: 5px;
+  }
+
+  .vscode-scrollbar::-webkit-scrollbar-thumb:hover {
+    background: #4f4f4f;
+  }
+
+  .vscode-scrollbar::-webkit-scrollbar-corner {
+    background: transparent;
+  }
+}

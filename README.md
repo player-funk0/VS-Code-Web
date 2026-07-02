@@ -84,4 +84,4 @@ src/
 | **Close Active Buffer** | `Ctrl + W` | `Cmd + W` |
 
 ## Philosophy & Contribution
-We value clean code, thorough documentation, and respectful collaboration. This project is distributed under the **MIT License**.
+We value clean code, thorough documentation, and respectful collaboration
